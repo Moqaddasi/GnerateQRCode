@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Gnerate QR Code </title>
+</head>
+
+<body>
+    <div class="bg-white relative">
+
+        <header class="bg-secondary h-20 flex items-center fixed top-0 w-full z-10 transition-all duration-300">
+            <div class="container mx-auto h-full flex items-center justify-between">
+                <div>
+                    <a class="" href="#">
+                        <h1 class=" text-tertiary cursor-pointer uppercase text-2xl ">
+                            QR code generator
+                        </h1>
+                    </a>
+                </div>
+                <div class="flex space-x-2 capitalize text-[15px] ">
+                    <input class="text-center p-3 rounded-lg text-black" type="url" name="url" id="url"
+                        placeholder="https://example.com" pattern="https://.*">
+                    <button class="bg-tertiary p-3 rounded-lg text-white" onclick="getUrl()">Search</button>
+                </div>
+                <div class="text-">
+                    <a class="text-tertiary text-xl cursor-pointers uppercase " href="http://moqaddasi.com">About me</a>
+                </div>
+            </div>
+        </header>
+        <section
+            class="lg:h-[100vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden ">
+            <div class="container m-auto h-3/5 w-1/4 bg-white rounded-xl flex-row ">
+                <div class="flex items-center h-full flex-col">
+                    <div class="lg:flex  justify-center items-center  m-4 ">
+                        <img class="bg-tertiary p-4 rounded-xl"
+                            src="https://api.qrserver.com/v1/create-qr-code/?data=moqaddasi.com&amp;size=300x300"
+                            id="qrCodeImage" />
+                    </div>
+                    <div class="flex m-4 flex-col  ">
+                        <h1 class="text-center">Your Url :</h1>
+                        <h1 id="yourLink"></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="/src/script.js"></script>
+</body>
+
+</html>
