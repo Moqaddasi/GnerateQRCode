@@ -515,6 +515,8 @@ video {
 
 .container {
   width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media (min-width: 640px) {
@@ -532,18 +534,14 @@ video {
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
   }
 }
 
@@ -661,12 +659,16 @@ video {
   clear: none;
 }
 
-.m-auto {
-  margin: auto;
+.m-7 {
+  margin: 1.75rem;
 }
 
 .m-4 {
   margin: 1rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
 }
 
 .mx-auto {
@@ -674,8 +676,24 @@ video {
   margin-right: auto;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.mb-11 {
+  margin-bottom: 2.75rem;
 }
 
 .box-border {
@@ -778,16 +796,16 @@ video {
   height: 100%;
 }
 
-.h-3\/5 {
-  height: 60%;
+.h-12 {
+  height: 3rem;
 }
 
 .w-full {
   width: 100%;
 }
 
-.w-1\/4 {
-  width: 25%;
+.w-12 {
+  width: 3rem;
 }
 
 .flex-shrink {
@@ -1563,8 +1581,12 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .rounded {
@@ -1800,6 +1822,14 @@ video {
   padding: 0.75rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1877,6 +1907,14 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[28px\] {
+  font-size: 28px;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-bold {
@@ -2327,6 +2365,8 @@ video {
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   @media (min-width: 640px) {
@@ -2344,6 +2384,8 @@ video {
   @media (min-width: 1024px) {
     .sm\:container {
       max-width: 1024px;
+      padding-right: 3rem;
+      padding-left: 3rem;
     }
   }
 
@@ -2353,22 +2395,12 @@ video {
     }
   }
 
-  @media (min-width: 1536px) {
-    .sm\:container {
-      max-width: 1536px;
-    }
-  }
-
   .sm\:underline {
     text-decoration-line: underline;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:flex {
-    display: flex;
-  }
-
   .lg\:h-\[100vh\] {
     height: 100vh;
   }

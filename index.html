@@ -10,10 +10,11 @@
 </head>
 
 <body>
-    <div class="bg-white relative">
 
-        <header class="bg-secondary h-20 flex items-center fixed top-0 w-full z-10 transition-all duration-300">
-            <div class="container mx-auto h-full flex items-center justify-between">
+    <section
+        class="lg:h-[100vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden">
+        <div class="container mx-auto">
+            <div class=" mb-11  flex flex-col items-center justify-between ">
                 <div>
                     <a class="" href="#">
                         <h1 class=" text-tertiary cursor-pointer uppercase text-2xl ">
@@ -27,27 +28,23 @@
                     <button class="bg-tertiary p-3 rounded-lg text-white" onclick="getUrl()">Search</button>
                 </div>
                 <div class="text-">
-                    <a class="text-tertiary text-xl cursor-pointers uppercase " href="http://moqaddasi.com">About me</a>
+                    <a class="text-tertiary text-xl cursor-pointers uppercase " href="http://moqaddasi.com">About
+                        me</a>
                 </div>
             </div>
-        </header>
-        <section
-            class="lg:h-[100vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden ">
-            <div class="container m-auto h-3/5 w-1/4 bg-white rounded-xl flex-row ">
-                <div class="flex items-center h-full flex-col">
-                    <div class="lg:flex  justify-center items-center  m-4 ">
-                        <img class="bg-tertiary p-4 rounded-xl"
-                            src="https://api.qrserver.com/v1/create-qr-code/?data=moqaddasi.com&amp;size=300x300"
-                            id="qrCodeImage" />
-                    </div>
-                    <div class="flex m-4 flex-col  ">
-                        <h1 class="text-center">Your Url :</h1>
-                        <h1 id="yourLink"></h1>
-                    </div>
+            <div class="flex flex-col ">
+                <div class="flex justify-center mb-4/5">
+                    <img class="bg-secondary p-4 m-7 rounded-2xl"
+                        src="https://api.qrserver.com/v1/create-qr-code/?data=moqaddasi.com&amp;size=300x300"
+                        id="qrCodeImage" />
+                </div>
+                <div class="bg-secondary p-6 rounded-2xl ">
+                    <h1 class="text-center">Your Url :</h1>
+                    <h1 id="yourLink"></h1>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 
