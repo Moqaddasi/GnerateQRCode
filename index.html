@@ -6,46 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
-    <title>Gnerate QR Code </title>
+    <title>Generate QR Code</title>
 </head>
 
 <body>
-
     <section
-        class="lg:h-[100vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden">
+        class="lg:h-[100vh] flex items-center bg-gradient-to-r from-blue-500 to-purple-500 py-32 lg:py-0 overflow-hidden">
         <div class="container mx-auto">
-            <div class=" mb-11  flex flex-col items-center justify-between ">
+            <div class="mb-11 flex flex-col items-center justify-between">
                 <div>
                     <a class="" href="#">
-                        <h1 class=" text-tertiary cursor-pointer uppercase text-2xl ">
+                        <h1 class="text-tertiary cursor-pointer uppercase text-2xl">
                             QR code generator
                         </h1>
                     </a>
                 </div>
-                <div class="flex space-x-2 capitalize text-[15px] ">
+                <div class="flex space-x-2 capitalize text-[15px]">
                     <input class="text-center p-3 rounded-lg text-black" type="url" name="url" id="url"
                         placeholder="https://example.com" pattern="https://.*">
-                    <button class="bg-tertiary p-3 rounded-lg text-white" onclick="getUrl()">Search</button>
+                    <button class="bg-tertiary p-3 rounded-lg text-white" onclick="getUrl()" id="generateButton">
+                        Generate
+                        <span id="spinner" class="hidden animate-spin ml-2">&#9696;</span>
+                        <span id="pleaseWait" class="hidden ml-2">Please Wait...</span>
+                    </button>
                 </div>
                 <div class="text-">
-                    <a class="text-tertiary text-xl cursor-pointers uppercase " href="http://moqaddasi.com">About
-                        me</a>
+                    <a class="text-tertiary text-xl cursor-pointers uppercase" href="http://moqaddasi.com">About me</a>
                 </div>
             </div>
-            <div class="flex flex-col ">
+            <div class="flex flex-col">
                 <div class="flex justify-center mb-4/5">
                     <img class="bg-secondary p-4 m-7 rounded-2xl"
                         src="https://api.qrserver.com/v1/create-qr-code/?data=moqaddasi.com&amp;size=300x300"
                         id="qrCodeImage" />
                 </div>
-                <div class="bg-secondary p-6 rounded-2xl ">
-                    <h1 class="text-center">Your Url :</h1>
-                    <h1 id="yourLink"></h1>
+                <div class="mt-3 bg-secondary p-6 rounded-2xl text-primary shadow-lg">
+                    <h1 class="text-center text-xl font-semibold">Your URL:</h1>
+                    <div class="text-center mt-2 overflow-hidden">
+                        <p class="text-lg whitespace-nowrap overflow-hidden overflow-ellipsis" id="yourLink"></p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </body>
 
 </html>

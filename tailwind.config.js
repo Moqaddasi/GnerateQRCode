@@ -18,10 +18,11 @@ module.exports = {
     extend: {
 
       colors: {
-        primary: '#002333',
-        secondary: '#DEEFE7',
-        tertiary: '#159A9C',
+        primary: 'linear-gradient(90deg, #002333, #DEEFE7, #159A9C)',
+        secondary: '#F7F7F7',
+        tertiary: '#FFA500',
       },
+
     },
   },
   plugins: [],
