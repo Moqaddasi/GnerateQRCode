@@ -1,6 +1,6 @@
 # QR Code Generator App
 
-![QR Code Generator](demo.png)
+![QR Code Generator](https://github.com/Moqaddasi/GnerateQRCode/blob/master/Readme/Screenshot%202023-09-01%20at%205.42.48%20PM.png)
 
 ## Table of Contents
 
@@ -28,9 +28,8 @@ This QR Code Generator App is a simple web application that allows you to genera
 
 ## Demo
 
-You can try out the [live demo here](#).
+You can try out the [live demo here](https://qcodegenerator.netlify.app/).
 
-![Demo GIF](demo.gif)
 
 ## Installation
 
